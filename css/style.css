@@ -77,3 +77,16 @@
     margin: 80px 130px;
     color: white;
 }
+
+.banner-title h1{
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+.vertical-bar{
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
