@@ -66,4 +66,9 @@
     border: 0;
     background: yellow;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.p-links .btn{
+     float: right;
 }
