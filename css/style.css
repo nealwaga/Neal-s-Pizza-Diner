@@ -44,5 +44,26 @@
 .p-links ul a{
     color: white;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 20px;
+}
+
+.p-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.p-links ul li:hover::after{
+    width: 100%;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    background: yellow;
+    font-weight: bold;
 }
