@@ -83,10 +83,3 @@
     margin-bottom: 30px;
 }
 
-.vertical-bar{
-    height: 100%;
-    background: black;
-    top: 0;
-    left: 0;
-    position: absolute;
-}
