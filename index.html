@@ -26,31 +26,43 @@
             <h1>NEAL'S PIZZA DINER</h1>
             <button id="myButton" type="button" class="btn">ORDER NOW</button>
             <div>
-                <form action="" id="form1">
-                    <label for="">Size of pizza</label><br>
-                    <select name="Size" id=""><br>
+                <form action="" id="form1" method="" name="frm">
+                    <input type="hidden" name="mode" value="PinRequest"/>
+                    <label for="" class="l-links">Size of pizza</label><br>
+                    <select name="size" id="" class="s-links"><br>
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="Small">Small</option>
                         <option value="Medium">Medium</option>
                         <option value="Large">Large</option>
+                        <option value="Extra-Large">Extra-Large</option>
                     </select><br>
-                    <label for="">Kind of crust</label><br>
-                    <select name="Crust" id="">
+                    <label for="" class="l-links">Kind of crust</label><br>
+                    <select name="Crust" id="" class="s-links">
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="Crispy">Crispy</option>
                         <option value="Stuffed">Stuffed</option>
                         <option value="Glutten-Free">Glutten-Free</option>
                     </select><br>
-                    <label for="">Choice of topping(s)</label><br>
-                    <select name="Topping(s)" id="">
+                    <label for="" class="l-links">Choice of topping(s)</label><br>
+                    <select name="Topping(s)" id="" class="s-links">
+                        <option value="" disabled selected>Choose your option</option>
                         <option value="Pepperoni">Pepperoni</option>
                         <option value="Extra Cheese">Extra Cheese</option>
                         <option value="Mushroom">Mushroom</option>
                     </select><br>
                     <label for="">Quantity</label><br>
-                    <input type="Number" name="" id="" value="1" min="1">
+                    <input type="number" name="" id="" value="1" min="1"><br>
                     <button type="submit">Add To Cart</button>
 
-                    <button>View Order Summary</button>
+                    <button id="view-order">View Order Summary</button>
+
                     <p id="order-summary"></p>
+                    <table id="our-order" class="table table-sm text-small">
+                        <tr>
+                            <th>Size</th><th>Crust</th><th>Quantity</th><th>Price</th>
+                        </tr>
+                        <tr><td colspan="4" id="total"></td></tr>
+                    </table>
                 </form>
             </div>
         </div>  

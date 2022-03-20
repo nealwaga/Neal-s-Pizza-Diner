@@ -18,8 +18,25 @@ form1.addEventListener("submit", function(event){
             order[key] = fd.get(key).toString();
         }
     }
-    if(confirm("This pizza will be added to your cart")){
+    if(confirm("Your order has been added to your cart")){
         cart.push(order);
         localStorage.setItem("cart", JSON.stringify(cart));
     }
 });
+
+const btnViewOrder = document.querySelector("#view-order");
+btnViewOrder.addEventListener('click', function(){
+    let cart - JSON.parse(localStorage.getItem("cart"));
+    cart.forEach(element => {
+        document.querySelector("#our-order").innerHTML += '<tr>
+        <td>${element['Size']}</td>
+        <td>${element['Crust']}</td>
+        <td>${element['Quantity']}</td>
+        <td>${element['Price']}</td>
+        </tr>';
+
+    });
+    let tot = cart.reduce((sum, item) => sum + (item['price'] || 0), 0);
+    document.querySelector("#total").innerHTML = "Total" +tot.toString();
+    console.log(localStorage.getItem("cart"));
+})
