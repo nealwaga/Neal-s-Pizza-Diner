@@ -24,9 +24,9 @@
         </div>
         <div class="banner-title">
             <h1>NEAL'S PIZZA DINER</h1>
-            <button id="myButton" type="button" class="btn">ORDER NOW</button>
+            <button id="myButton" type="button" class="btn">ORDER HERE</button>
             <div>
-                <form action="" id="form1" method="" name="frm">
+                <form id="form1" name="frm">
                     <input type="hidden" name="mode" value="PinRequest"/>
                     <label for="" class="l-links">Size of pizza</label><br>
                     <select name="size" id="" class="s-links"><br>
@@ -37,38 +37,37 @@
                         <option value="Extra-Large">Extra-Large</option>
                     </select><br>
                     <label for="" class="l-links">Kind of crust</label><br>
-                    <select name="Crust" id="" class="s-links">
+                    <select name="crust" id="" class="s-links">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="Crispy">Crispy</option>
                         <option value="Stuffed">Stuffed</option>
                         <option value="Glutten-Free">Glutten-Free</option>
                     </select><br>
                     <label for="" class="l-links">Choice of topping(s)</label><br>
-                    <select name="Topping(s)" id="" class="s-links">
+                    <select name="toppings" id="" class="s-links">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="Pepperoni">Pepperoni</option>
                         <option value="Extra Cheese">Extra Cheese</option>
                         <option value="Mushroom">Mushroom</option>
                     </select><br>
+                    <input type="text" name="price" placeholder="Price"/><br>
                     <label for="">Quantity</label><br>
-                    <input type="number" name="" id="" value="1" min="1"><br>
-                    <button type="submit">Add To Cart</button>
+                    <input type="number" name="quantity" id="" value="1" min="1"><br>
+
+                    <button type="submit">Add To Cart</button><br>
 
                     <button id="view-order">View Order Summary</button>
 
                     <p id="order-summary"></p>
-                    <table id="our-order" class="table table-sm text-small">
-                        <tr>
-                            <th>Size</th><th>Crust</th><th>Quantity</th><th>Price</th>
-                        </tr>
-                        <tr><td colspan="4" id="total"></td></tr>
-                    </table>
+
+                    <p id="demo">Would you want your order to be delivered?</p>
+                    <button onclick="myFunction()">Yes</button>
                 </form>
             </div>
         </div>  
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
